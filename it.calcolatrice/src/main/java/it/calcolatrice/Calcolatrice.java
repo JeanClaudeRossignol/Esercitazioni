@@ -14,7 +14,12 @@ public class Calcolatrice {
 		return a*b;
 	}
 	
-	public double divisione(int a, int b) {
+	public double divisione(double a, double b) {
+		
+		if(b==0) {
+			throw new IllegalArgumentException("Non puoi dividere per zero");
+		}
+		
 		return a/b;
 	}
 	
@@ -26,7 +31,7 @@ public class Calcolatrice {
 		return c;		
 	}
 	
-	public double media(int a, int b) {
+	public float media(int a, int b) {
 		return (a+b)/2;
 	}
 	
